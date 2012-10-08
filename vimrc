@@ -37,7 +37,6 @@ set ignorecase
 set smartcase
 
 set hlsearch
-nnoremap <esc> :noh<CR><esc>
 
 set colorcolumn=80
 
@@ -46,6 +45,16 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
