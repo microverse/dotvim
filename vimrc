@@ -1,6 +1,8 @@
 call pathogen#infect()
 
-set ts=4
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
 if &compatible
     set nocompatible
@@ -29,13 +31,21 @@ vnoremap > >gv
 set expandtab
 set smarttab
 
-set backspace=2
+set backspace=indent,eol,start
 
 set ignorecase
 set smartcase
 
 set hlsearch
+nnoremap <esc> :noh<CR><esc>
 
 set colorcolumn=80
 
-set mouse=a
+" Move through windows easier
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" automatically reload vimrc when it's saved
+au BufWritePost .vimrc so ~/.vimrc
