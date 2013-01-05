@@ -9,6 +9,9 @@ if &compatible
 endif
 
 set number
+map <F12> :set number!<CR>
+imap <F12> <c-o>:set number!<CR>
+
 syntax enable
 set autoindent
 
