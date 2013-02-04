@@ -8,6 +8,12 @@ if &compatible
     set nocompatible
 endif
 
+" Have Vim jump to the last position when reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
+
 set number
 map <F12> :set number!<CR>
 imap <F12> <c-o>:set number!<CR>
