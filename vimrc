@@ -71,3 +71,7 @@ imap <right> <nop>
 
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
+
+" For faster startup of vim don't connect to the X Server
+" Clipboard will be disabled as well as the window title
+set clipboard=exclude:.*
