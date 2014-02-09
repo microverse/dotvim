@@ -22,7 +22,8 @@ syntax enable
 set autoindent
 
 set background=dark
-colorscheme molokai
+colorscheme lucius
+LuciusBlackHighContrast
 
 filetype plugin on
 
