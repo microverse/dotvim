@@ -47,8 +47,10 @@ set smartcase
 
 set hlsearch
 
+" Highlight column if text exceeds over 80 characters
 if exists('+colorcolumn')
-   set colorcolumn=80
+    highlight ColorColumn ctermbg=red
+    call matchadd('ColorColumn', '\%80v', 100)
 else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
