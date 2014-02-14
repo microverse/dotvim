@@ -28,3 +28,9 @@
 [submodule "bundle/emmet"]
 	path = bundle/emmet
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/airplane"]
+	path = bundle/airplane
+	url = https://github.com/bling/vim-airline.git

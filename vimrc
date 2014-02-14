@@ -82,3 +82,7 @@ set clipboard=exclude:.*
 " display tabs, nbsp and trailing spaces
 set listchars=tab:>~,nbsp:_,trail:.
 set list
+
+" enable airline status bar
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
