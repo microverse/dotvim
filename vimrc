@@ -1,5 +1,7 @@
 call pathogen#infect()
 
+set visualbell
+
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -86,3 +88,8 @@ set list
 " enable airline status bar
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+
+if has('persistent_undo')        "check if your vim version supports it
+    set undofile                 "turn on the feature
+    set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
+endif
